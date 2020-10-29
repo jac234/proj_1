@@ -7,6 +7,6 @@
     //using an array to hold values
     $login = array("$email", "$pass");
 
-    echo "$login[0] <br><br>";
-    echo "$login[1] <br><br>";
+    echo "$login[0] <br><br>"; //Cant be empty & contains @ character
+    echo "$login[1] <br><br>"; //Cant be empty & at least 8 character
 ?>

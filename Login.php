@@ -1,5 +1,5 @@
 <?php
-    echo '<h2>Login (PHP)</h2>';
+    echo '<h2>Login Results</h2>';
     //the next two lines get the data from the html form
     $email = filter_input(INPUT_POST, 'email');
     $pass  = filter_input(INPUT_POST, 'pass');
@@ -17,8 +17,8 @@
     if((strlen($pass) > 0) and (strlen($pass) >= 8)){
         echo "Password: $pass <br><br>";
     }elseif ((strlen($pass) == 0)){
-        echo "Password: $pass<br> - should not be left empty.<br><br>";;
+        echo "Password: $pass<br> - should not be left empty.<br><br>";
     }elseif ((strlen($pass) < 8)){
-        echo "Password: $pass<br> - should be 8 characters or longer.<br><br>";;
+        echo "Password: $pass<br> - should be 8 characters or longer.<br><br>";
     }
 ?>
